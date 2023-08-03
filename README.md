@@ -1,2 +1,2 @@
 # yoga-website
-This is my portfolio front end website 
+This is my portfolio front end website .
