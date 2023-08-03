@@ -1,0 +1,242 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/e872ba44e8.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        .webform input,
+        button#submit-button {
+            height: calc(2.25rem + 20px);
+        }
+
+        .form-control {
+            border-radius: 2px;
+            margin: 1.3rem 0;
+        }
+
+        .form-control {
+
+            border-color: black;
+        }
+
+
+        .contact h2+p {
+            max-width: 90%;
+        }
+
+        .google-map {
+            border-top: 1px solid #efebeb;
+            margin-top: 2.5rem;
+            padding-top: 2.5rem;
+        }
+
+        .google-map iframe {
+            width: 100%;
+        }
+
+    </style>
+    <script>
+     function sucessful(){
+        alert("your massage sent succesfully ☺ !")
+     }
+    </script>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!--Navbar-->
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-md-5 ps-md-5 d-flex align-items-center" href="/">
+                <img src="/assest/icons/divine yoga.jpg" class="me-2" height="40px" class="logo-img">Divine Yoga</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a href="/index.html">Home</a></li>
+                    <li class="nav-item"><a href="/class/class.html">Class</a></li>
+                    <li class="nav-item"><a href="/pages/gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a href="about-us.html">About</a></li>
+                    <li class="nav-item"><a href="/pages/contact.html">Contact</a></li>
+                    <!--
+                    <li class="nav-item"><a href="#"><i class="fa fa-moon"></i></a></li>
+                    <li class="nav-item"><a href="#"><i class="fa fa-sun"></i></a></li>-->
+
+                </ul>
+                <div class="d-flex"></div>
+            </div>
+        </div>
+                
+    </nav>
+    <!--End of Navbar-->
+
+
+    <br><br><br>
+<!-----------------FAQ sec---------------------->
+<div class="faq-container">
+    <h2 class="text-center">FAQ's</h2>
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Que.1
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+        answer here
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Que.2
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              answer here
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Que.3
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+            answer here
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+<!-----------------FAQ sec end-------------------->
+<br><br><br>
+    <!--------------first contact---------------->
+    <div class="contact section" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="ml-auto col-lg-5 col-md-6 col-12">
+                    <h2  class="mb-4 pb-2" data-aos="fade-up"
+                        data-aos-delay="200">
+                        Feel Free to ask anything
+                    </h2>
+
+                    <form onsubmit="sendEmail()" reset(); return flase;>
+
+
+                        <input type="text" class="form-control" placeholder="Enter your name" id="name" required>
+                        <input type="email" class="form-control" placeholder="Enter your emails" id="email" required>
+                        <textarea rows="5" class="form-control" id="message" placeholder="Type message...."></textarea>
+                        <div class="text-center">
+                            <button class="btn" type="submit" onclick="sucessful()">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="mx-auto mt-4 mt-lg-0 mt-md-0 col-lg-5 col-md-6 col-12">
+                    <h2  class="mb-4" data-aos="fade-up"
+                        data-aos-delay="600">
+                        Where you can <span>find us</span>
+                    </h2>
+                    <p data-aos="fade-up" data-aos-delay="800">
+                        <i class="fa fa-map-marker mr-1"></i> Palampur-Gupalpur,<br> , Himachal Pradesh 176059, India
+                    </p>
+                    <div class="google-map" data-aos="fade-up" data-aos-delay="900">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50139.29601195553!2d76.50263016073032!3d32.1188822716972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3904b3e0d1e63ac9%3A0x11046afda32dfd59!2sPalampur%2C%20Himachal%20Pradesh!5e0!3m2!1sen!2sin!4v1691035662464!5m2!1sen!2sin"
+                            width="1920" height="250" frameborder="0" style="border:0;" allowfullscreen=""
+                            aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br>
+
+
+    <div class="footer">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <a class="navbar-brand ms-md-0 ps-md-5 d-flex align-items-center mt-3">
+                        <img src="/assest/icons/divine yoga.jpg" class="logo" style="height: 50px;">
+                        <span class="ms-2">
+                            <h4 class=" mt-0 " style="text-decoration: none; color:black;">Divine Yoga</h4>
+                        </span>
+                    </a>
+                    <p>Yoga cultivates the ways of maintaining a balanced attitude in day-to-day life and endows skill
+                        in the performance of one's actions</p>
+                </div>
+                <div class="col-md-3 md-4">
+                    <h4>Features</h4>
+                    <p>Home</p>
+                    <p>Deals & Offers</p>
+                    <p>Customer Reviews</p>
+
+                </div>
+                <div class="col-md-3 md-4">
+                    <h4>Quick Contact</h4>
+                    <p><i class="fa fa-phone"></i>+91 1234567890</p>
+                    <p><i class="fa fa-envelope"></i>yoga123@gmail.com</p>
+                    <p><i class="fa fa-home"></i>Palampur,Himachal Pradesh,India</p>
+                </div>
+                <div class="col-md-3 md-4">
+                    <h4>Follow Us On</h4>
+                    <p><i class="fa fa-facebook"></i>Facebook</p>
+                    <p><i class="fa fa-youtube"></i>youtube</p>
+                    <p><i class="fa fa-instagram"></i>Instagram</p>
+                </div>
+            </div>
+            <hr />
+            <p class="copyright">Made With Love Care <i class="fa fa-heart"></i> Copyright © Divine Yoga 2023.</p>
+
+        </div>
+    </div>
+
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<!---
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                secureToken: "e7b8ddde-7d8d-4296-a2ef-ce079398cfe4",
+    
+    To: 'punamrajput777999@gmail.com',
+                From: document.getElementById("email").value,
+                Subject: "Contact enquiry from divine yoga",
+                Body: "Name :" + document.getElementById("name").value + "<br> Email : " + document.getElementById("name").value + "<br> Message : " + document.getElementById("message").value
+            }).then(
+                message => alert("Message Sent Succesfully 😊")
+            );
+        }
+
+    </script>-->
+</body>
+
+</html>
